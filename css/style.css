@@ -1,0 +1,680 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'DM Serif Display',serif;
+    font-family: 'Merriweather',serif;
+}
+/* before header */
+.before-header{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+   z-index: 999999999;
+   color: white;
+   height: 50px;
+}
+.before-header .colorlib{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    
+}
+.cont{
+    margin: 10px 0;
+}
+.before-header .colorlib .color {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 150px;
+    text-align: center;
+}
+.before-header .colorlib .text{
+    padding: 13px;
+    width: 130px;
+    text-align: center;
+    background-color: black;
+}
+
+/*   ///////Header///////     */
+.header{
+    height: 50px;
+    margin-top: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    background-color: rgb(0, 102, 255);
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+ .header .logo{
+    width: 40%;
+    float: left;
+    color: white;
+}
+  .nav{
+    width: 60%;
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+
+ .nav > li{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+}
+ .nav > li > a{
+    font-size: 20px;
+    display: block;
+    color: rgba(245, 245, 245, 0.877);
+    font-weight: 500;
+}
+
+ a{
+    text-decoration: none;
+}
+.icons{
+    width: 17%;
+    display: flex;
+    
+}
+.icons a{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.4);
+    padding-top: 15px;
+    font-size: 30px;
+}
+.icons a:hover{
+    display: inline-block;
+    color: #fff;
+    /* width: 40px; */
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.4) ;
+}
+
+/* ////////////////Home///////////////// */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/home/bg_1.jpg.webp);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+.home-page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.home-content{
+    width: 40%;
+    margin-bottom: 40px;
+    position: absolute;
+    padding-top: 190px;
+    left: 120px;
+    top: 80px;
+    text-align: left;
+}
+.home-content h1{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 20px 0px 20px;
+}
+.home-content h3{
+    color: #fff;
+    font-weight: 400;
+    font-size: 17px;
+}
+.home-content p{
+    width: 443;
+    margin-bottom: 30px;
+    color: rgba(245, 245, 245, 0.877);
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+
+.header .nav > li >a:hover{
+    color: #fff;
+   
+}
+
+.header .nav > li >a.active{
+    color: white;
+}
+.home-content .btn{
+    padding: 20px 35px;
+    margin-left: 5px;
+    border: transparent;
+}
+.home-content .btn-Hire{
+    background-color: rgb(0, 102, 255);
+    color: white;
+}
+.home-content .btn-View{
+    color: rgb(0, 102, 255);
+}
+
+
+
+
+.pages{
+    background-color: #f9f9f9;
+}
+/* ///////////About////////// */
+.about{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+.container-about{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 100vh;
+    background-size: cover;
+
+   
+}
+.container-about .img{
+    width: 35%;
+}
+.container-about .img img{
+    width: 100%;
+    height: 500px;
+    margin-left: 100px;
+}
+.about-desc{
+    width: 50%;
+}
+.about-links{
+    margin-top: 20px;
+    display: flex;
+   margin-bottom: 30px;
+    flex-wrap: nowrap;
+}
+.about-links a{
+    padding: 0 10px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.719);
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #fff;
+}
+.about-links a:hover{
+    background-color: rgb(0, 102, 255);
+   padding: 10px;
+}
+
+.about-skills h1{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-skills p{
+    margin-bottom: 30px;
+    max-width: 100%;
+    color: rgba(0, 0, 0, 0.719);
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.about-skills .down{
+    color: rgba(0, 0, 0, 0.719);
+    margin-top: 30px;
+}
+
+/* ////////Services/////////////// */
+.services{
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.header-services{
+    width: 80%;
+}
+.services-desc{
+    text-align: center;
+}
+.services-desc h4{
+    text-transform: uppercase;
+    color:rgb(0, 102, 255) ;
+    margin: 25px 0;
+    font-size: 14px;
+    font-weight: 900;
+}
+.services-desc h1{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: 40px;
+}
+.services-container{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.service-card{
+    width: 30%;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    padding: 80px 10px 80px 30px;
+}
+.service-card h3{
+    text-transform: capitalize;
+    color: rgb(0, 102, 255);
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.service-card p{
+    color: rgba(0, 0, 0, 0.479);
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+.service-card .read{
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 70px;
+   font-size: 18px;
+   color: rgb(0, 102, 255);
+}
+.service-card .read i{
+    font-size: 14px;
+}
+.service-card .icon{
+    font-size: 50px;
+    width: 25%;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: rgb(0, 102, 255);
+    color: white;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+   margin-top: 30px;
+   margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.479);
+    font-size: 20px;
+}
+
+.cont a{
+    color: rgb(0, 102, 255);
+    font-weight: 700;
+}.p{
+    color: rgba(0, 0, 0, 0.479);
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    margin-left: 270px;
+    margin-bottom: 80px;
+}
+.linear{
+    position: relative;
+    width: 120%;
+    height: 200px;
+    background-image: url("../images/services/bg_3.jpg.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    height: 30vh;
+    margin-top: 150px;
+}
+.overly{
+    position: absolute;
+    height: 30vh;
+    width: 100%;
+    opacity: 0.9;
+    background-color: rgba(0, 102, 255, 0.705);
+}
+.squar{
+    display: flex;   
+}
+.linear-card{
+    margin-top: 50px;
+    margin-left: 80px;
+    text-align: center;
+}
+.container{
+width: 80%;
+margin: auto;
+}
+.card-desc{
+    margin-left: 50px;
+    margin-right: 50px;   
+    display: flex;
+}
+.card-desc i{
+    font-size: 40px;
+}
+
+
+
+/* ///////////Protoflio///////////// */
+/* .protoflio{
+    background-color: #f9f9f9;
+} */
+.protoflio-container{
+    width: 80%;
+    margin: auto;
+}
+.protoflio-content{
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+}
+.protoflio-content .protoflio-cards{
+    width: 49%;
+
+}
+.protoflio-cards img{
+    width: 100%;
+    height: 300px;
+}
+.protoflio-cards{
+    position: relative;
+}
+.protoflio-cards .layer-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,102,255,0.5);
+    opacity: 0;
+}
+.protoflio-cards:hover .layer-content{
+    opacity: 1;
+}
+.layer-content .layer-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.person{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.person h4{
+    color: rgb(0, 102, 255);
+    margin-top: 10px;
+}
+.protofli-person-cards p{
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.479);
+}
+.person-desc{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.person img{
+    width: 70px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.containers{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.protofli-person-cards{
+    width: 30%;
+    height: 200px;
+    margin-top: 50px;
+   
+    background-color: #fff;
+    margin-right: 15px;
+}
+
+
+/* //////blogs//////// */
+.container-blogs{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.blog-cards{
+    width: 45%;
+    background-color: #fff;
+    margin: 25px;
+}
+.info{
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+.date{
+    display: flex;
+    gap: 5px;
+    text-transform: uppercase;
+}
+.comment{
+    display: flex;
+    text-transform: uppercase;
+    gap: 3px;
+}
+.blog-cards .blog-desc{
+    width: 100%;
+    height: 200px;
+    text-transform: capitalize;
+}
+.container-blogs .img{
+    width: 100%;
+    height: 350px;
+}
+.blog-cards .blog-desc h2{
+    margin-bottom: 20px;
+}
+.blog-cards .blog-desc h2:hover{
+    color: rgb(0, 102, 255);
+}
+.blog-cards .blog-desc p{
+    text-transform: none;
+    color: rgba(0, 0, 0, 0.479);
+}
+.info i{
+    color: rgb(0, 102, 255);
+}
+.date h5{
+    color: rgba(0, 0, 0, 0.479);
+}
+.comment h5{
+    color: rgb(0, 102, 255)
+}
+.pricing-container{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.pricing-cards{
+    width: 30%;
+    height: 400px;
+    background-color: #fff;
+    margin-top: 30px;
+    margin: 20px 10px;
+    margin-bottom: 250px;
+}
+.content-cards{
+    text-align: center;
+}
+.pricing-cards h4{
+    text-align: center;
+    color: rgb(0, 102, 255);
+    text-transform: uppercase;
+    margin: 40px 0;
+}
+.pricing-cards h1{
+    text-align: center;
+    color: rgb(0, 102, 255);
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+.pricing-cards h1 span{
+    font-size: 20px;
+    margin-top: 5px 5px;
+    position: absolute;
+}
+.pricing-cards p{
+    padding: 30px;
+    color: rgba(0, 0, 0, 0.479);
+}
+.pricing-cards a{
+     padding:20px 60px;
+    border: 1px solid rgb(0, 102, 255);
+    color: rgb(0, 102, 255);
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 30px;
+    display: inline-block;
+}
+.pricing-cards a:hover{
+    background-color: rgb(0, 102, 255);
+    color: #fff;
+}
+
+
+/* ////////contact///////// */
+.contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.map{
+    width: 50%;
+    height: 700px;
+}
+.form{
+    height: 700px;
+    width: 50%;
+    padding-left: 20px;
+    background-color: #fff;
+    /* background-color: aqua; */
+}
+.form h1{
+    margin: 50px 0 10px 20px;
+    
+}
+.form .head{
+    color: rgba(0, 0, 0, 0.479);
+    margin: 20px 0;
+    margin-left: 20px;
+}
+.address p{
+    color: rgba(0, 0, 0, 0.479);
+}
+input{
+    padding: 10px;
+    width: 45%;
+}
+input .subject{
+    width: 90%;
+}
+.contact-info{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+.contact-info .card{
+    width: 30%;
+   margin: 20px;
+}
+.form .send{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    background-color: rgb(0, 102, 255);
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+textarea{
+    width: 95%;
+    margin-top: 20px;
+}
+.form .nav{
+    width: 80%;
+    text-align: left;
+}
+.form .nav > li > a{
+    color: rgb(0, 102, 255);
+    text-transform: uppercase;
+    font-size: 12px;
+   font-weight: 700;
+   margin-bottom: 50px;
+}
+.overlay{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(0, 102, 255);
+    height: 150px;
+    margin-bottom: 90px;
+}
+.overlay .pragragh{
+    width: 60%;
+    margin: auto;
+    padding-left: 60px;
+}
+.overlay .pragragh h2{
+    color: #fff;
+    padding-bottom: 10px;
+}
+.overlay .pragragh p{
+    color: rgba(0, 0, 0, 0.548);
+}
+.overlay .button{
+    width: 35%;
+    margin: auto;
+}
+.overlay .button a{
+    border: 1px solid white;
+    padding: 15px 90px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.overlay .button a:hover{
+    background-color: #fff;
+    color: black;
+}
+
